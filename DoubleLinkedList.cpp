@@ -57,4 +57,9 @@ public:
 
         }
 
+        // insert in between node 
+        // Step 8: Locate position for insertion 
+        Node *current = START;
+
+
 
