@@ -71,6 +71,16 @@ public:
             return;
         }
 
+        // Step 9: Insert between current and current->next 
+        newNode->next = current->next; //Step 9a: newNode.next = current.next
+        newNode->prev = current;      //Step 9a: newNode.next = current
+
+        // insert last node 
+        if (current->next != NULL)
+            current->next->prev = newNode; //Step 9c: current.next = newNode
+    }
+
+
 
 
 
